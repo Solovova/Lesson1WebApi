@@ -5,10 +5,7 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Notes.Application.Common.Exceptions;
 using Notes.Application.Interfaces;
-using Notes.Application.Notes.Queries.GetNoteDetails;
-using Notes.Domain;
 
 namespace Notes.Application.Notes.Queries.GetNoteList{
     public class GetNoteListQueryHandler: IRequestHandler<GetNoteListQuery, NoteListVm>{
