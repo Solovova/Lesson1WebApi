@@ -1,7 +1,6 @@
 using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -9,6 +8,7 @@ using Notes.Application;
 using Notes.Application.Common.Mappings;
 using Notes.Application.Interfaces;
 using Notes.Persistence;
+using Notes.WebApi.Middleware;
 
 namespace Notes.WebApi{
     public class Startup{
@@ -43,6 +43,7 @@ namespace Notes.WebApi{
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCustomExceptionHandler();
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
