@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using AutoMapper.Configuration;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Notes.Application.Interfaces;
 
