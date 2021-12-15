@@ -1,1 +1,4 @@
 https://www.youtube.com/watch?v=gA1uk_kGmVs&list=PLEtg-LdqEKXbpq4RtUp1hxZ6ByGjnvQs4&index=7&ab_channel=PlatinumDEV
+
+https://localhost:5001/swagger/v1/swagger.json
+https://localhost:5001/swagger/index.html
