@@ -31,7 +31,7 @@ namespace Notes.Tests.Notes.Queries
             var result = await handler.Handle(
                 new GetNoteListQuery
                 {
-                     UserID = NotesContextFactory.UserBId
+                     UserId = NotesContextFactory.UserBId
                 },
                 CancellationToken.None);
 

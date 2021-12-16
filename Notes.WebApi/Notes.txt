@@ -1,7 +1,13 @@
 Postman
 DB Browser (SQLite)
+NSwagStudio   Call transform option on the base class
+                ClientBase
 //React
 npx create-react-app solovova.notes.frontend --template typescript
+npm i oidc-client
+npm i react-router-dom
+npm i @types/react-router-dom
+npm i react-bootstrap
 
 
 https://www.youtube.com/watch?v=gA1uk_kGmVs&list=PLEtg-LdqEKXbpq4RtUp1hxZ6ByGjnvQs4&index=7&ab_channel=PlatinumDEV

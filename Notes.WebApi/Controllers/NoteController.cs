@@ -40,7 +40,7 @@ namespace Notes.WebApi.Controllers{
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<NoteListVm>> GetAll(){
             var query = new GetNoteListQuery(){
-                UserID = UserId
+                UserId = UserId
             };
             var vm = await Mediator.Send(query);
             return Ok(vm);
@@ -92,7 +92,7 @@ namespace Notes.WebApi.Controllers{
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Guid>> Create([FromBody] CreateNoteDto createNoteDto){
             var command = _mapper.Map < CreateNoteCommand > (createNoteDto);
-            command.UserId = Guid.NewGuid();
+            command.UserId = UserId;
             var noteId = await Mediator.Send(command);
             return Ok(noteId);
         }
