@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using MediatR;
 using Notes.Application.Interfaces;
+using Serilog;
 
 namespace Notes.Application.Behaviors
 {
@@ -21,8 +22,8 @@ namespace Notes.Application.Behaviors
             var requestName = typeof(TRequest).Name;
             var userId = _currentUserService.UserId;
 
-            // Log.Information("Notes Request: {Name} {@UserId} {@Request}",
-            //     requestName, userId, request);
+            Log.Information("Notes Request: {Name} {@UserId} {@Request}",
+                requestName, userId, request);
 
             var response = await next();
 

@@ -15,7 +15,12 @@ https://www.youtube.com/watch?v=gA1uk_kGmVs&list=PLEtg-LdqEKXbpq4RtUp1hxZ6ByGjnv
 https://localhost:5001/swagger/v1/swagger.json
 https://localhost:5001/swagger/index.html
 
+Token watch:
+jwt.ms
+jwt.io
 
+Log view
+Tail blazer
 
 
 https://github.com/andreisfedotov/Notes/
